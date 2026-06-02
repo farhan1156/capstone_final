@@ -124,7 +124,15 @@ A 2×3 subplot grid visualizes key distributions:
 
 ### Model 2 — Delivery Duration:
 
-Error Rate is 10.15, after hyperparameter tuning 
+Error Rate is 10.15, 
+Mean Absolute Error: 8.46
+feature_importance: [8.77170056e-02 5.70784387e-02 1.56364697e-01 1.61597397e-01
+ 1.56914371e-01 1.59632435e-01 1.61332329e-01 1.39782748e-04
+ 4.10723299e-04 5.12188581e-04 9.14456247e-05 2.12329446e-04
+ 7.65777383e-05 1.58148988e-02 1.53431802e-02 8.56253335e-03
+ 9.18735434e-03 9.01231160e-03]
+
+after hyperparameter tuning 
 
 Best Parameters {'n_estimators': 100, 'min_samples_split': 2, 'min_samples_leaf': 4, 'max_features': 'log2', 'max_depth': 10} 
 Best CV RMSE -9.920 minutes 
@@ -133,6 +141,8 @@ Best CV RMSE -9.920 minutes
 ###  Model 3 — Driver Availability:
 
 Baseline Accuracy: 1.000
+Recall Score: 1.000
+Precision Score: 1.000
 Classification Report
  | | precision | recall | f1-score | support |
  |---|---|---|---|---|
