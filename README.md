@@ -115,26 +115,22 @@ A 2×3 subplot grid visualizes key distributions:
 
 ## 6. Key Findings
 
-### ⚠️ Model 1 — Order Status: Misleading Accuracy
+### Model 1 — Order Status: Misleading Accuracy
 
 | Metric | Value |
 |---|---|
 | Accuracy | **85.2%** |
-| Precision (Cancelled) | 0.00 |
-| Recall (Cancelled) | 0.00 |
-| Precision (In Transit) | 0.00 |
-| Recall (In Transit) | 0.00 |
 
 
-### ⚠️ Model 2 — Delivery Duration:
+### Model 2 — Delivery Duration:
 
-Error Rate is 10.15 , after hyperparameter tunning 
+Error Rate is 10.15, after hyperparameter tuning 
 
 Best Parameters {'n_estimators': 100, 'min_samples_split': 2, 'min_samples_leaf': 4, 'max_features': 'log2', 'max_depth': 10} 
 Best CV RMSE -9.920 minutes 
 
 
-### ⚠️ Model 3 — Driver Availability:
+###  Model 3 — Driver Availability:
 
 Baseline Accuracy: 1.000
 Classification Report
@@ -146,8 +142,8 @@ Classification Report
  |macro avg|1.00|1.00|1.00|19000|
  |weighted avg|1.00|1.00|1.00|19000|
 
-After hyperparameter tunning
-Fitting 3 folds for each of 15 candidates, totalling 45 fits
+After hyperparameter tuning
+Fitting 3 folds for each of 15 candidates, totaling 45 fits
 RandomizedSearchCV completed in 7.2 seconds
 Best Parameters {'n_estimators': 200, 'min_samples_split': 2, 'min_samples_leaf': 4, 'max_features': 'log2', 'max_depth': 30, 'class_weight': 'balanced'} 
 Best CV F1-SCORE 1.0000 
